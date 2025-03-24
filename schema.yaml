@@ -1,0 +1,5 @@
+users:
+  - name: string
+    age: integer
+    email: email
+    phone_no: phone_number
