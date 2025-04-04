@@ -19,8 +19,10 @@ Schema.yaml is by default having schema for clickstream data which one can refer
     myenv\Scripts\activate     # For Windows 
     ```
 2. Install python modules
+
     ```pip install -r requirements.txt```
 
 3. Run the flask application
+
     ```python app.py```
 
