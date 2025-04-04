@@ -1,5 +1,37 @@
-users:
-  - name: string
-    age: integer
-    email: email
-    phone_no: phone_number
+clickstream_data:
+  - event_id: string          # Unique identifier for the event
+  - user_id: string           # Identifier for the user performing the action
+  - session_id: string        # Identifier for the session
+  - timestamp: timestamp      # Date and time of the event
+  - event_type: string        # Type of event (e.g., "page_view", "search", "add_to_basket")
+  - page_url: string          # URL where the event occurred
+  - referrer_url: string      # URL that referred the user
+  - user_agent: string        # Browser or device details
+  - ip_address: string        # User’s IP address
+  - geolocation:              # User's location information
+      latitude: float
+      longitude: float
+      city: string
+      country: string
+  - device_type: string       # Type of device (e.g., "desktop", "mobile")
+  - platform: string          # Operating system or platform (e.g., "Windows", "iOS")
+  - search_query: string      # Search term used by the user
+  - search_results_count: int # Total number of results returned for the search query
+  - basket:                   # Details of items added to the basket
+      - sku: string           # SKU of the product
+      - product_name: string  # Name of the product
+      - quantity: int         # Quantity of the product in the basket
+      - price: float          # Price of the product
+  - purchase_total: float     # Total value of the basket (if purchase event occurred)
+  - event_properties:         # Custom event-specific metadata
+      - key: string
+      - value: string
+  - page_load_time: float     # Time taken to load the page (in milliseconds)
+  - interaction_duration: float # Duration of user interaction (in seconds)
+  - search_click_position: int # Position of the clicked result in search results
+  - marketing_campaign:       # Nested column for marketing campaign data
+      campaign_name: string   # Name of the campaign
+      campaign_details:       # Nested structure with additional details
+          medium: string      # Marketing medium (e.g., "social_media", "email")
+          source: string      # Campaign source (e.g., "Facebook", "Newsletter")
+          cost: float         # Cost of the campaign (in dollars)
