@@ -14,7 +14,8 @@ Schema.yaml is by default having schema for clickstream data which one can refer
 
 ## How to run
 1. Activate your environment
-    ```python -m venv myenv 
+    ```
+    python -m venv myenv 
     source myenv/bin/activate  # For macOS/Linux
     myenv\Scripts\activate     # For Windows 
     ```
