@@ -27,3 +27,5 @@ Schema.yaml is by default having schema for clickstream data which one can refer
 
     ```python app.py```
 
+## Deployment Guides
+1. Pythonanywhere by ANACONDA deployment guide (free for 3 months) - *schema_data_generator/Deployment_Guide/python_anywhere.md*
